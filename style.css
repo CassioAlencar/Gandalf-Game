@@ -96,7 +96,7 @@ button {
 button:disabled {
     background-color: gray;
 }
-
+/*para pc*/
 @media screen and (max-width: 1250px) {
 
     h1 {
@@ -113,7 +113,7 @@ button:disabled {
     }
 
     .container__imagem-pessoa {
-        display: none;
+        display: block;
     }
 
     .container__conteudo {
@@ -124,7 +124,8 @@ button:disabled {
     .container__informacoes {
         padding: 1rem
     }
-
+}
+/*para celular*/
 @media screen and (max-width: 768px) {
     .container {
       flex-direction: column; 
@@ -143,9 +144,10 @@ button:disabled {
     }
   
     .container__imagem-pessoa {
-        display: block;    
+        display: block;     
         width: 100%;        
-        margin: 1rem auto;  
+        margin: 1rem auto;      
+      } 
       }
   
     h1 {
@@ -159,6 +161,39 @@ button:disabled {
     .container__botao, .container__input {
       font-size: 16px;     
     }
-  }
+
+  /*para tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .container {
+      flex-direction: row;    
+    }
+    .container__conteudo {
+      position: absolute;     
+      bottom: 0;
+      width: 50%;            
+    }
   
+    .container__informacoes {
+      padding: 2rem;       
+    }
+  
+    .container__imagem-pessoa {
+        display: block;
+        width: 40%;        
+        margin: 2rem auto;  
+        max-width: 400px;                
+    }
+  
+    h1 {
+      font-size: 48px;      
+    }
+  
+    .texto__paragrafo {
+      font-size: 20px;    
+    }
+    .container__botao, .container__input {
+      font-size: 18px;     
+  }
 }
