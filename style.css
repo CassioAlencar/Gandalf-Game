@@ -124,4 +124,41 @@ button:disabled {
     .container__informacoes {
         padding: 1rem
     }
+
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+      height: auto;         
+    }
+  
+    .container__conteudo {
+      position: relative;    
+      width: 100%;           
+      bottom: 0;
+    }
+  
+    .container__informacoes {
+      padding: 1rem;        
+      order: 2;             
+    }
+  
+    .container__imagem-pessoa {
+        display: block;    
+        width: 100%;        
+        margin: 1rem auto;  
+      }
+  
+    h1 {
+      font-size: 36px;     
+    }
+  
+    .texto__paragrafo {
+      font-size: 18px;     
+    }
+  
+    .container__botao, .container__input {
+      font-size: 16px;     
+    }
+  }
+  
 }
